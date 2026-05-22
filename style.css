@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.search-bar{
+    height: 40px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 80px
+}
+
+
+.login-btn {
+    padding: 10px 24px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+    .calendar-box{
+      width:900px;
+      background:#fff;
+      border:2px solid #222;
+      border-radius:35px;
+      overflow:hidden;
+      display:flex;
+      height:470px;
+    }
+
+    /* LEFT SIDE */
+    .left-side{
+      width:40%;
+      padding:10px;
+      border-right:1px solid #ddd;
+    }
+
+    .profile{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:20px;
+    }
+
+    .profile img{
+      width:45px;
+      height:45px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    .name{
+      font-size:32px;
+      font-weight:500;
+      margin-bottom:25px;
+    }
+
+    .info{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      margin-bottom:20px;
+      color:#333;
+      line-height:1.5;
+      font-size:16px;
+    }
+
+    .icon{
+      font-size:18px;
+      margin-top:2px;
+    }
+
+    /* RIGHT SIDE */
+    .right-side{
+      width:60%;
+      padding:30px;
+    }
+
+    .top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:25px;
+    }
+
+    .month{
+      font-size:32px;
+      font-weight:700;
+    }
+
+    .month span{
+      font-weight:400;
+      color:#666;
+      margin-left:10px;
+    }
+
+    .arrows{
+      display:flex;
+      gap:20px;
+      font-size:24px;
+      cursor:pointer;
+      color:#666;
+    }
+
+    .days,
+    .dates{
+      display:grid;
+      grid-template-columns:repeat(7,1fr);
+      text-align:center;
+      gap:10px;
+    }
+
+    .days div{
+      font-weight:700;
+      color:#333;
+      margin-bottom:15px;
+    }
+
+    .dates div{
+      padding:14px 0;
+      border-radius:10px;
+      font-size:18px;
+    }
+
+    .active{
+      background:#e5e5e5;
+    }
+main {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.left-section {
+    flex: 1;
+    max-width: 500px;
+}
+
+.new-badge {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    top: 100.5px;
+}
+
+.graybox{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(211, 208, 208);
+    border-radius: 12px; 
+    position: relative;
+    top: 130px;   
+}
+
+
+.description {
+    font-size: 15px;
+    width: 108%;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 30px;
+    margin-top: 60%;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: #1a1a1a;
+    width: 120%;
+      margin-top: 40%;
+}
+
+.sub-heading {
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+
+.sub-heading2 {
+   font-size: 50px;
+    font-weight: 700;
+    color:  #000000;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    left: 340px;
+    top: -30px;
+    margin-top: -35px;
+   
+}
+
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-card {
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.user-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.card-title {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.card-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-details {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.detail {
+    background-color: #e8e8e8;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.calendar {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-header {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.calendar-day {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.calendar-day:hover {
+    background-color: #333;
+}
+
+footer {
+    padding: 40px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.claim-section {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.input-prefix {
+    color: #666;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #1a1a1a;
+    outline: none;
+}
+
+.claim-btn {
+    padding: 12px 24px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.claim-btn:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .left-section {
+        max-width: 100%;
+    }
+    
+    .main-heading {
+        font-size: 36px;
+    }
+    
+    header {
+        padding: 16px 20px;
+    }
+    
+    .search-bar input {
+        width: 200px;
+    }
+}
+.email-tennis-section {
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.tennis-banner {
+    background-color: #1a1a1a;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    border-radius: 24px;
+    padding: 80px 60px;
+    color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tennis-heading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 60px;
+    letter-spacing: -0.02em;
+}
+
+.tennis-content {
+    max-width: 400px;
+}
+
+.content-item {
+    margin-bottom: 40px;
+}
+
+.content-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.content-desc {
+    font-size: 18px;
+    color: #a0a0a0;
+    line-height: 1.4;
+}
+
+.content-list {
+    margin-bottom: 60px;
+}
+
+.content-list p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.content-footer p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .email-tennis-section {
+        padding: 40px 20px;
+    }
+
+    .tennis-banner {
+        padding: 40px 30px;
+    }
+
+    .tennis-heading {
+        font-size: 32px;
+    }
+
+    .content-title,
+    .content-list p,
+    .content-footer p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .left-section {
+        max-width: 100%;
+    }
+
+    .main-heading {
+        font-size: 36px;
+    }
+
+    header {
+        padding: 16px 20px;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+}
